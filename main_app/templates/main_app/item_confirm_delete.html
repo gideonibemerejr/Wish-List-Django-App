@@ -1,6 +1,12 @@
 {% extends "../base.html" %} {% block content %}
 
-<h1>Delete Wish List {{ object.description }}?</h1>
+<h1>
+  Delete
+  <span class="highlight">
+    {{ object.description }}
+  </span>
+  from the Wish List?
+</h1>
 <form action="" method="post">
   {% csrf_token %}
   <button class="pure-button button-error" type="submit">Yes - Delete!</button>
