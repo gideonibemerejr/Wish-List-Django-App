@@ -1,5 +1,5 @@
 from django.db import models
-from django.shortcuts import redirect
+from django.urls import reverse
 
 
 # Create your models here.
@@ -12,4 +12,4 @@ class Item(models.Model):
         return self.name
 
     def get_absolute_url(self):
-        return redirect('item_list')
+        return reverse('item_list')

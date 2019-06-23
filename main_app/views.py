@@ -13,8 +13,10 @@ class ItemList(ListView):
 
 class ItemCreate(CreateView):
     model = Item
-    fields = 'description',
+    fields = '__all__'
+    success_url = '/'
 
 
 class ItemDelete(DeleteView):
     model = Item
+    success_url = '/'
