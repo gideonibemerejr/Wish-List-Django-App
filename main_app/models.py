@@ -7,7 +7,6 @@ from django.shortcuts import redirect
 
 class Item(models.Model):
     description = models.TextField(max_length=75)
-    quantity = models.IntegerField()
 
     def __str__(self):
         return self.name
